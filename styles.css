@@ -227,6 +227,7 @@ header {
 	padding: 1rem;
 	grid-row: 2/ 3;
 	display: grid;
+	align-items: center;
 	grid-gap: 1rem;
 	grid-template-columns: repeat(6, minmax(10rem, 12rem));
 }
