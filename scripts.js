@@ -93,7 +93,7 @@ function clearBooks() {
 
 function addBookToLibrary(book) {
 	myLibrary.push(book);
-	setData;
+	setData();
 }
 
 function deleteCurrentBook(currentBook) {
