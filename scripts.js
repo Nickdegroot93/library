@@ -93,6 +93,7 @@ function clearBooks() {
 
 function addBookToLibrary(book) {
 	myLibrary.push(book);
+	setData();
 }
 
 function deleteCurrentBook(currentBook) {
@@ -180,3 +181,22 @@ const finishedBook = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http:
 </g>
 
 </svg>`;
+
+// setting Library to be stored in local storage
+function setData() {
+	localStorage.setItem(`myLibrary`, JSON.stringify(myLibrary));
+}
+
+//pulls books from local storage when page is refreshed
+function restore() {
+	if (!localStorage.myLibrary) {
+		createBook();
+	} else {
+		let objects = localStorage.getItem('myLibrary'); // gets information from local storage to use in below loop to create DOM/display
+		objects = JSON.parse(objects);
+		myLibrary = objects;
+		createBook();
+	}
+}
+
+restore();
