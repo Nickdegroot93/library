@@ -242,6 +242,14 @@ header {
 	);
 }
 
+#book-icon {
+	margin: auto;
+	padding-top: 1rem;
+	height: 4rem;
+	width: 4rem;
+	fill: var(--full-bg-color);
+}
+
 .book_showcase--book::after {
 	z-index: 0;
 	transform: rotate(-45deg);
