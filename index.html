@@ -20,6 +20,14 @@
 				<h2>By: Nick de Groot</h2>
 			</header>
 			<section class="book_showcase" id="book-container">
+				<!-- <div class="book_showcase--book">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z"></path><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"></path></svg>
+
+					<h3 class="book-title">Name</h3>
+					<h4 class="book-author">Author</h4>
+					<h5 class="book-pages">321 pages</h5>
+					<div class="book-read">Finished</div>
+				</div> -->
 				<button class="btn btn-add" id="add-book-btn">
 					<h4>Add Book</h4>
 					<svg
@@ -41,6 +49,21 @@
 			</section>
 			<class class="book_input" id="overlay">
 				<div class="book-input-container">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						width="24"
+						height="24"
+						id="input-cross-btn"
+					>
+						<path
+							d="M9.036 7.976a.75.75 0 00-1.06 1.06L10.939 12l-2.963 2.963a.75.75 0 101.06 1.06L12 13.06l2.963 2.964a.75.75 0 001.061-1.06L13.061 12l2.963-2.964a.75.75 0 10-1.06-1.06L12 10.939 9.036 7.976z"
+						></path>
+						<path
+							fill-rule="evenodd"
+							d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"
+						></path>
+					</svg>
 					<form onsubmit="return false">
 						<label for="btitle">Book Title</label>
 						<input
@@ -68,9 +91,9 @@
 
 						<label for="progress">Progress</label>
 						<select id="bprogress" name="bprogress">
-							<option value="finished">Finished</option>
+							<option value="notread" selected>Not read</option>
 							<option value="reading">Currently reading</option>
-							<option value="notread">Not read</option>
+							<option value="finished">Finished</option>
 						</select>
 
 						<input type="submit" value="Submit" id="submit-btn" />
