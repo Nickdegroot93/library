@@ -288,6 +288,7 @@ footer {
 	background-color: transparent;
 	border: 1px solid var(--off-white);
 	cursor: pointer;
+	height: 15rem;
 }
 
 .btn-add:hover {
